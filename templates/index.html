@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>William's Gästbok</title>
+  </head>
+  <body>
+    <h1>William's Gästbok</h1>
+
+    <form action="/add" method="post">
+      <label for="name">Namn:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="comment">Kommentar:</label><br />
+      <textarea id="comment" name="comment" maxlength="200" required></textarea
+      ><br /><br />
+
+      <button type="submit">Lägg till</button>
+    </form>
+  </body>
+</html>
