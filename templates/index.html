@@ -17,5 +17,17 @@
 
       <button type="submit">Lägg till</button>
     </form>
+
+    <hr />
+
+    <h2>Inlägg:</h2>
+    {% if entries %} {% for entry in entries %}
+    <p>
+      <strong>{{ entry.name }}</strong> — {{ entry.time }}<br />
+      {{ entry.comment }}
+    </p>
+    {% endfor %} {% else %}
+    <p>Inga inlägg än.</p>
+    {% endif %}
   </body>
 </html>
